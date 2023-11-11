@@ -12,8 +12,6 @@ class VenuesController < ApplicationController
     matching_venues = Venue.where({ :id => venue_id })
     @the_venue = matching_venues[0]
 
-    pp(@the_venue)
-
     render({ :template => "venue_templates/details" })
   end
 
