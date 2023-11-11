@@ -21,4 +21,5 @@ class Venue < ApplicationRecord
     matching_comments = Comment.where({ :venue_id => my_id })
     return matching_comments
   end
+
 end
